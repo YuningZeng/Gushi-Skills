@@ -1,22 +1,29 @@
-# Core Trading Rules
+# 核心交易纪律
 
-## 1. Protect capital
-Stay in the game. Large drawdowns destroy both capital and psychology.
+## 1. 保住本金
+市场永远有下一次机会，但重伤后的账户和心态很难快速恢复。
 
-## 2. Process over outcome
-A good trade can lose money and a bad trade can make money. Judge quality by process first.
+## 2. 先看流程，再看结果
+好交易不等于赚钱，坏交易也不一定立刻亏钱。判断优劣先看是否按高质量流程执行。
 
-## 3. Predefine risk
-Every position must have an invalidation level, expected reward, and size limit.
+## 3. 每笔交易必须先定义风险
+任何交易都必须提前明确：
+- 为什么做
+- 哪里错
+- 错了亏多少
+- 对了怎么拿
 
-## 4. Avoid concentration blindness
-Multiple positions in the same theme can create hidden leverage.
+## 4. 防止伪分散
+如果多个持仓本质上都押注同一方向，那么它们不是分散，而是叠加风险。
 
-## 5. Respect event risk
-Earnings and macro events can invalidate otherwise sound setups.
+## 5. 尊重事件风险
+财报、宏观数据、政策和突发消息都可能让“本来正确的逻辑”瞬间失效。
 
-## 6. Do not average down impulsively
-Only add risk when planned in advance and supported by setup quality.
+## 6. 不冲动补仓
+补仓必须来自计划与赔率，不来自不服气。
 
-## 7. Keep records
-If a mistake is not recorded, it will be repeated.
+## 7. 留痕
+不记录，就无法复盘；无法复盘，就无法进化。
+
+## 8. 连续失误后主动降速
+当状态不对、节奏不对、判断失真时，减少出手就是最好的防守。

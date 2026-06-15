@@ -1,39 +1,58 @@
-# Daily Review Skill
+# 每日复盘 Skill
 
-## Purpose
-Help the trader perform a disciplined post-market review and convert market observations into actionable improvements.
+## 目标
+帮助交易者在收盘后完成结构化复盘，把“今天发生了什么”转化成“明天应该怎么做”。
 
-## Inputs
-- Date
-- Market environment
-- Index performance
-- Sector strength/weakness
-- Trades taken today
-- Missed opportunities
-- Emotional state
+## 适用场景
+- 日内交易后的总结
+- 波段持仓的日度检查
+- 情绪失控后的纠偏
+- 连续盈利 / 连续亏损后的归因分析
 
-## Workflow
-1. Summarize the broad market trend.
-2. Identify the strongest and weakest sectors.
-3. Review each trade:
-   - thesis
-   - entry
-   - exit
-   - position size
-   - result
-4. Identify whether profits/losses came from skill, luck, or rule-breaking.
-5. Record recurring mistakes.
-6. Extract 1-3 improvements for the next session.
+## 输入信息
+- 日期
+- 大盘表现
+- 核心指数强弱
+- 板块轮动情况
+- 今日交易记录
+- 错过的机会
+- 持仓变化
+- 情绪状态
+- 是否违反纪律
 
-## Output Format
-- Market summary
-- Good decisions
-- Bad decisions
-- Rule violations
-- Lessons learned
-- Plan for tomorrow
+## 复盘流程
+1. **先看市场，不先看账户盈亏**
+   - 今天是趋势日、震荡日，还是情绪退潮日？
+   - 市场主线是什么？是否发生切换？
+2. **看板块与个股强弱**
+   - 今天最强的板块是什么？
+   - 自己参与的是主线、支线，还是杂毛？
+3. **逐笔复盘交易**
+   - 为什么买？
+   - 为什么卖？
+   - 是否按计划执行？
+   - 盈亏来自能力、运气，还是纪律破坏？
+4. **复盘没做的交易**
+   - 是因为没看懂，还是因为犹豫？
+   - 错过是否值得后悔？
+5. **检查情绪与行为偏差**
+   - 是否冲动追高？
+   - 是否报复性交易？
+   - 是否因为上一笔盈利/亏损而失真？
+6. **提炼改进动作**
+   - 只写 1~3 条最关键改进项
 
-## Guardrails
-- No hindsight self-deception.
-- Judge process before P&L.
-- Separate execution quality from market randomness.
+## 输出格式
+- 今日市场一句话总结
+- 今日最强方向
+- 今日最差决策
+- 今日最佳决策
+- 纪律违规记录
+- 明日重点观察方向
+- 明日执行改进项
+
+## 复盘原则
+- 先评价流程，再评价结果
+- 盈利不一定是好交易，亏损不一定是坏交易
+- 不做“马后炮式复盘”
+- 所有结论都尽量对应到具体行为

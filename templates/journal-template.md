@@ -1,45 +1,45 @@
-# Trading Journal Template
+# 交易日志模板
 
-## Basic Info
-- Date:
-- Market session:
-- Focus tickers:
+## 基础信息
+- 日期：
+- 交易时段：
+- 关注标的：
 
-## Market Context
-- Index trend:
-- Strong sectors:
-- Weak sectors:
-- Macro/events:
+## 市场环境
+- 大盘状态：
+- 强势板块：
+- 弱势板块：
+- 宏观 / 事件因素：
 
-## Trade Log
-### Trade 1
-- Ticker:
-- Thesis:
-- Entry:
-- Exit:
-- Size:
-- Stop:
-- Target:
-- Result:
-- Rule followed? yes/no
-- Notes:
+## 交易记录
+### 交易 1
+- 标的：
+- 交易逻辑：
+- 买入原因：
+- 卖出原因：
+- 仓位：
+- 止损：
+- 止盈：
+- 盈亏结果：
+- 是否按计划执行：是 / 否
+- 问题记录：
 
-### Trade 2
-- Ticker:
-- Thesis:
-- Entry:
-- Exit:
-- Size:
-- Stop:
-- Target:
-- Result:
-- Rule followed? yes/no
-- Notes:
+### 交易 2
+- 标的：
+- 交易逻辑：
+- 买入原因：
+- 卖出原因：
+- 仓位：
+- 止损：
+- 止盈：
+- 盈亏结果：
+- 是否按计划执行：是 / 否
+- 问题记录：
 
-## Reflection
-- Best decision today:
-- Worst decision today:
-- Emotional mistakes:
-- Process mistakes:
-- Key lesson:
-- Improvement for next session:
+## 复盘总结
+- 今日最佳决策：
+- 今日最差决策：
+- 今日情绪问题：
+- 今日执行问题：
+- 今日最关键教训：
+- 明日改进动作：

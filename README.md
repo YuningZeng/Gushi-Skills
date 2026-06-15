@@ -1,22 +1,54 @@
-# Gushi Skills
+# 股市操作 Skills
 
-A repository for stock-market operation skills, prompts, workflows, and risk-control playbooks.
+一个用于沉淀 **股市操作方法、交易提示词、复盘流程、风控规则与执行清单** 的仓库。
 
-## Structure
+## 仓库目标
 
-- `skills/` — reusable stock-market operation skills
-- `templates/` — journaling and checklist templates
-- `rules/` — trading principles and discipline rules
-- `examples/` — example outputs
+把主观、零散、情绪化的交易决策，沉淀成：
 
-## Included Skills
+- 可复用的 **交易技能（Skills）**
+- 可执行的 **盘前 / 盘中 / 盘后流程**
+- 可检查的 **风控与仓位规则**
+- 可复盘的 **交易日志模板**
 
-- Daily review
-- Trade plan generation
-- Risk-control check
-- Position management
-- Earnings and macro-event handling
+## 仓库结构
 
-## Goal
+- `skills/`：核心技能说明
+- `templates/`：模板与清单
+- `rules/`：纪律与原则
+- `examples/`：示例输出
 
-Turn discretionary market decisions into repeatable, checklist-driven workflows.
+## 当前包含的技能
+
+- 每日复盘
+- 交易计划生成
+- 风险控制检查
+- 仓位管理
+- 财报与宏观事件应对
+- 市场分析
+- 系统提示词
+
+## 适用场景
+
+- 短线交易
+- 波段交易
+- 中线持仓管理
+- 财报前后交易决策
+- 市场情绪与板块轮动观察
+
+## 使用建议
+
+你可以把这些文件直接当成：
+
+1. 自己的交易 SOP
+2. AI 提示词库
+3. 每日复盘手册
+4. 团队内部知识库
+
+## 核心理念
+
+- 先活下来，再追求收益
+- 先定义风险，再考虑利润
+- 先看流程质量，再看盈亏结果
+- 不把运气误认为能力
+- 不把侥幸当作方法

@@ -1,10 +1,18 @@
-# Example Output
+# 示例输出
 
-## Example: Trade Plan
-- Trade thesis: NVDA remains in strong sector leadership and may continue trend after a controlled pullback.
-- Entry plan: Enter partial position only if price reclaims intraday VWAP and holds above prior support.
-- Stop-loss plan: Exit if price loses support and closes below invalidation zone.
-- Take-profit plan: Trim into prior high test and leave runner only if momentum confirms.
-- Position sizing notes: Risk only 0.5%-1.0% of account on initial entry.
-- Disqualifying conditions: Weak market breadth, failed reclaim, or major event ahead.
-- Event risk warning: Reduce size if holding into earnings or CPI.
+## 示例一：交易计划
+- 市场环境：指数震荡偏强，AI 主线仍有资金承接，但分歧加大。
+- 标的逻辑：目标股属于主线核心，前一日缩量回踩后获得支撑，若重新放量转强可考虑参与。
+- 触发条件：价格重新站稳关键均线并放量突破日内平台。
+- 失效条件：跌破前低且量能放大，说明回踩失败。
+- 止盈 / 止损思路：先看前高附近是否有承压，若冲高无承接则分批减仓；若跌破失效位则严格执行止损。
+- 仓位建议：首仓控制在总资金的 10%~20%，确认后再考虑加仓。
+- 核心风险：板块分歧扩大、指数转弱、临近重大数据公布。
+- 最终建议：可以列入观察并等待明确信号，不建议抢跑。
+
+## 示例二：事件前处理
+- 事件概述：目标股将在明日盘后发布财报。
+- 跳空风险评估：财报属于高不确定性事件，若持仓过夜可能面临无法控制的跳空损失。
+- 仓位建议：若已有浮盈，可先减仓锁定一部分利润；若没有明显安全垫，避免重仓穿越财报。
+- 事件后情景推演：若高开高走可等第一次回踩确认；若高开低走则警惕兑现；若低开大跌则等待市场重新定价。
+- 执行动作：优先考虑缩仓或等待财报落地后再做。

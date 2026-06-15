@@ -1,38 +1,58 @@
-# Position Management Skill
+# 仓位管理 Skill
 
-## Purpose
-Standardize how positions are added, trimmed, held, or exited.
+## 目标
+统一处理持仓中的“拿、加、减、卖”，避免因为情绪导致持仓行为失真。
 
-## Inputs
-- Ticker
-- Cost basis
-- Current price
-- Unrealized P&L
-- Original thesis
-- Current market condition
-- Current position size
-- Planned maximum size
+## 适用场景
+- 持仓浮盈时是否继续拿
+- 持仓浮亏时是否止损
+- 是否可以加仓
+- 是否该做分批止盈
 
-## Workflow
-1. Reassess whether the original thesis is still valid.
-2. Determine whether price action confirms or weakens the thesis.
-3. Decide among:
-   - hold
-   - add
-   - trim
-   - exit
-4. If adding, define trigger and maximum additional size.
-5. If trimming, define what risk is being reduced.
-6. If exiting, define whether due to invalidation, target hit, or time-stop.
+## 输入信息
+- 标的代码
+- 成本价
+- 当前价
+- 当前盈亏
+- 初始建仓逻辑
+- 当前市场环境
+- 当前仓位比例
+- 计划最大仓位
+- 是否接近关键事件
 
-## Output Format
-- Thesis status
-- Position status
-- Recommended action
-- Trigger levels
-- Risk note
+## 处理流程
+1. **先判断原始逻辑是否还成立**
+   - 逻辑还在：考虑持有或按计划处理
+   - 逻辑失效：优先退出
+2. **判断价格行为是否支持逻辑**
+   - 强于预期：可以考虑继续持有或小幅加仓
+   - 弱于预期：考虑降仓
+3. **四选一动作**
+   - 继续持有
+   - 加仓
+   - 减仓
+   - 清仓
+4. **加仓前必须回答**
+   - 是按计划加仓，还是因为不甘心？
+   - 加仓后总风险是否仍可控？
+5. **减仓前必须回答**
+   - 是锁定利润，还是因为预期减弱？
+   - 减仓后是否还能保留核心仓位？
+6. **清仓条件**
+   - 逻辑失效
+   - 目标兑现
+   - 时间止损
+   - 事件风险超出承受范围
 
-## Guardrails
-- Add only to strength or planned support, not emotional hope.
-- Trim when asymmetry worsens.
-- Exit immediately when thesis is invalidated.
+## 输出格式
+- 原始逻辑状态
+- 当前走势判断
+- 推荐动作
+- 关键价位
+- 仓位说明
+- 风险提醒
+
+## 核心规则
+- 不因情绪随意补仓
+- 加仓只加给更高胜率，不加给希望
+- 浮盈仓位也要尊重撤退规则

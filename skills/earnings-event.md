@@ -1,39 +1,53 @@
-# Earnings and Event Skill
+# 财报与事件 Skill
 
-## Purpose
-Handle high-volatility periods around earnings, CPI, FOMC, jobs reports, and company-specific catalysts.
+## 目标
+处理高波动场景下的交易决策，尤其是财报、CPI、FOMC、非农、产品发布、监管消息等事件前后。
 
-## Inputs
-- Ticker
-- Event type
-- Event date
-- Existing position size
-- Implied volatility / expected move
-- Conviction level
-- Holding period intention
+## 适用场景
+- 财报前是否持股过夜
+- 宏观数据前是否减仓
+- 重大事件后是否追单
+- 突发消息后是否继续持有
 
-## Workflow
-1. Identify whether the event is binary or directional.
-2. Estimate whether the current position size is appropriate for gap risk.
-3. Decide whether to:
-   - reduce before event
-   - hold through event
-   - wait for reaction then trade
-4. Define post-event scenarios:
-   - beat and hold gains
-   - beat but fade
-   - miss and gap down
-   - guidance-driven move
-5. Record the reason for holding or not holding through the event.
+## 输入信息
+- 标的代码
+- 事件类型
+- 事件日期
+- 当前仓位
+- 预期波动
+- 个人信心等级
+- 计划持有周期
+- 是否已有浮盈缓冲
 
-## Output Format
-- Event summary
-- Gap-risk assessment
-- Position decision
-- Scenario map
-- Post-event action plan
+## 处理流程
+1. **判断事件性质**
+   - 二元结果型（大概率跳空）
+   - 趋势确认型
+   - 情绪催化型
+2. **判断仓位是否适合穿越事件**
+   - 如果隔夜大幅波动也能承受，才可考虑持有
+3. **给出三种选择**
+   - 事件前减仓
+   - 持仓穿越事件
+   - 等事件落地后再做
+4. **预设事件后剧本**
+   - 超预期高开高走
+   - 超预期高开低走
+   - 低于预期跳空下跌
+   - 业绩不错但指引差
+5. **写出事件后动作计划**
+   - 什么情况下追
+   - 什么情况下等回踩
+   - 什么情况下完全不碰
 
-## Guardrails
-- Respect gap risk.
-- Size smaller into uncertainty.
-- Do not confuse conviction with certainty.
+## 输出格式
+- 事件概述
+- 跳空风险评估
+- 仓位建议
+- 事件后情景推演
+- 执行动作
+
+## 核心规则
+- 任何“看好”都不等于“可重仓赌事件”
+- 事件前缩仓，往往比事件后补救更容易
+- 高不确定性环境里，现金也是仓位

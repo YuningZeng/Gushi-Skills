@@ -1,29 +1,29 @@
-# Trading Checklist Template
+# 交易检查清单模板
 
-## Pre-Market
-- [ ] Check major indexes
-- [ ] Check key macro events today
-- [ ] Check earnings calendar
-- [ ] Identify leading and lagging sectors
-- [ ] Define watchlist
-- [ ] Define no-trade conditions
+## 盘前检查
+- [ ] 看主要指数状态
+- [ ] 看当天宏观事件日历
+- [ ] 看财报日历
+- [ ] 看强弱板块轮动
+- [ ] 做观察名单
+- [ ] 定义今天的不做条件
 
-## Before Entry
-- [ ] Clear thesis
-- [ ] Clear entry trigger
-- [ ] Clear stop-loss
-- [ ] Clear target
-- [ ] Acceptable size
-- [ ] Event risk checked
+## 开仓前检查
+- [ ] 有明确逻辑
+- [ ] 有明确触发条件
+- [ ] 有明确止损条件
+- [ ] 有明确止盈思路
+- [ ] 仓位大小合理
+- [ ] 已检查事件风险
 
-## During Trade
-- [ ] Following original plan
-- [ ] Not revenge trading
-- [ ] Not averaging emotionally
-- [ ] Total exposure acceptable
+## 持仓中检查
+- [ ] 当前操作符合原计划
+- [ ] 没有情绪化加仓
+- [ ] 没有报复性交易
+- [ ] 总风险仍在控制范围内
 
-## Post-Market
-- [ ] Log all trades
-- [ ] Review mistakes
-- [ ] Record lessons
-- [ ] Prepare next-day plan
+## 盘后检查
+- [ ] 记录全部交易
+- [ ] 复盘错误与偏差
+- [ ] 提炼经验
+- [ ] 准备明日计划

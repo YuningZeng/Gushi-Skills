@@ -1,34 +1,56 @@
-# Risk Control Skill
+# 风险控制 Skill
 
-## Purpose
-Prevent avoidable losses by forcing a risk review before and during trading.
+## 目标
+在交易前与交易中持续检查：这笔交易会不会伤到账户，当前组合会不会因为相关性或事件风险而失控。
 
-## Inputs
-- Total account size
-- Current exposure
-- Number of open positions
-- Correlation across positions
-- Max daily loss
-- Max per-trade loss
-- Upcoming macro or earnings events
+## 适用场景
+- 开仓前
+- 加仓前
+- 连续亏损后
+- 重大事件前
+- 持仓较多时
 
-## Workflow
-1. Calculate total capital at risk.
-2. Check whether multiple positions are effectively the same bet.
-3. Verify that per-trade loss is within allowed tolerance.
-4. Verify that total daily downside is acceptable.
-5. Check liquidity and gap risk.
-6. Check event risk.
-7. Recommend reduce / hold / avoid.
+## 输入信息
+- 总资金规模
+- 当前总仓位
+- 持仓数量
+- 单笔仓位
+- 单笔最大亏损额度
+- 当日最大回撤限制
+- 个股间相关性
+- 是否临近财报 / 宏观事件
+- 标的流动性
 
-## Output Format
-- Account risk snapshot
-- Per-trade risk check
-- Portfolio correlation warning
-- Event risk warning
-- Action recommendation
+## 检查流程
+1. **检查单笔风险**
+   - 如果止损触发，这笔会亏多少钱？
+   - 是否超过账户允许范围？
+2. **检查组合风险**
+   - 当前持仓是不是都押在同一主题？
+   - 看似分散，实则同涨同跌？
+3. **检查事件风险**
+   - 财报、议息、CPI、非农、政策消息是否临近？
+   - 是否存在隔夜跳空不可控风险？
+4. **检查流动性风险**
+   - 是否容易买进难卖出？
+   - 是否是小票、冷门票、价差过大标的？
+5. **检查连亏状态**
+   - 如果最近连续做错，是否应主动降仓位、降频率？
+6. **输出动作建议**
+   - 可以做
+   - 缩小仓位做
+   - 等待
+   - 不做
 
-## Guardrails
-- Survival first, returns second.
-- Never let one trade materially damage the account.
-- Concentration risk must be explicit.
+## 输出格式
+- 单笔风险评估
+- 组合风险评估
+- 事件风险评估
+- 流动性评估
+- 最终建议
+
+## 核心规则
+- 先控制亏损，再讨论盈利
+- 不允许单笔重创账户
+- 不允许“同一个方向重复重仓”
+- 遇到不确定性增大时，先降杠杆、降仓位

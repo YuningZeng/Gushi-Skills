@@ -1,43 +1,64 @@
-# Trade Plan Skill
+# 交易计划 Skill
 
-## Purpose
-Generate a structured trading plan before execution.
+## 目标
+在交易发生前，提前定义“为什么做、怎么做、做错怎么办、做对怎么处理”，避免临盘拍脑袋。
 
-## Inputs
-- Ticker
-- Time horizon: intraday / swing / position
-- Thesis
-- Entry zone
-- Invalidations
-- Target zone
-- Current position
-- Maximum acceptable loss
-- Upcoming events
+## 适用场景
+- 盘前制定观察计划
+- 个股准备买入前
+- 准备做波段交易前
+- 持仓想加仓 / 减仓前
 
-## Workflow
-1. Define the trade thesis in one sentence.
-2. Identify the setup type:
-   - breakout
-   - pullback
-   - trend continuation
-   - reversal
-   - earnings reaction
-3. Define entry conditions.
-4. Define stop-loss logic.
-5. Define take-profit logic.
-6. Define position size based on account risk.
-7. List conditions that cancel the trade.
+## 输入信息
+- 标的代码
+- 交易方向（做多 / 减仓 / 观望）
+- 时间周期（短线 / 波段 / 中线）
+- 核心逻辑
+- 计划买点区域
+- 失效条件
+- 目标位
+- 当前仓位
+- 最大可承受亏损
+- 是否有财报 / CPI / FOMC / 非农等事件
 
-## Output Format
-- Trade thesis
-- Entry plan
-- Stop-loss plan
-- Take-profit plan
-- Position sizing notes
-- Disqualifying conditions
-- Event risk warning
+## 执行流程
+1. **一句话写清交易逻辑**
+   - 例如：板块主升、龙头分歧回流、趋势股回踩支撑、财报后超预期延续。
+2. **定义交易类型**
+   - 突破
+   - 回踩
+   - 趋势延续
+   - 超跌反弹
+   - 事件驱动
+3. **定义触发条件**
+   - 什么情况下才可以买？
+   - 如果没出现信号，是否禁止出手？
+4. **定义失效条件**
+   - 跌破什么位置说明判断错了？
+   - 哪种盘口/量价关系出现时要撤退？
+5. **定义止盈和减仓规则**
+   - 到目标位一次性走，还是分批走？
+   - 什么情况下留利润奔跑？
+6. **定义仓位大小**
+   - 首仓多少？
+   - 加仓条件是什么？
+   - 单笔风险占总资金比例多少？
+7. **定义不做条件**
+   - 大盘弱
+   - 板块不共振
+   - 事件临近
+   - 流动性太差
 
-## Guardrails
-- No trade without invalidation.
-- No averaging down without a predefined plan.
-- No oversized position relative to account risk.
+## 输出格式
+- 交易逻辑
+- 计划买点
+- 止损条件
+- 止盈条件
+- 仓位安排
+- 无效条件
+- 风险提示
+
+## 执行原则
+- 没有止损位的交易，不做
+- 没有逻辑支撑的加仓，不做
+- 市场不配合时，宁可错过，不硬做
